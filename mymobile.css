@@ -1,0 +1,38 @@
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .small-header .menu {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .menu.active {
+        display: block;
+        background-color: #95c297;
+        width: 100%;
+        top: 60px;
+        left: 0;
+    }
+
+    .menu.active li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu.active li:hover {
+        background-color: #7da781;
+    }
+}

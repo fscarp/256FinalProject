@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Preservation - Grow & Gather</title>
+    <link rel="stylesheet" href="mystyles.css">
+    <link rel="stylesheet" href="mymobile.css">
+    <style>
+
+        .slideshow-container {
+            max-width: 800px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+		
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1s;
+        }
+
+        @keyframes fade {
+            from {opacity: .2} 
+            to {opacity: 1.5}
+        }
+    </style>
+</head>
+<body>
+    <header class="small-header">
+        <div class="container">
+            <div class="logo">Grow & Gather</div>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guides.html">Gardening Guides</a></li>
+                    <li><a href="preservation.html">Food Preservation</a></li>
+                    <li><a href="sustainable.html">Sustainable Gardening</a></li>
+                    <li><a href="tips.html">Seasonal Tips</a></li>
+                </ul>
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <header class="large-header">
+        <h1>Food <span class="highlight">Preservation</span></h1>
+    </header>
+
+    <main>
+        <div class="slideshow-container">
+            <div class="picture fade">
+                <img src="canning.jpg" style="width:100%">
+            </div>
+
+            <div class="picture fade">
+                <img src="drying.jpg" style="width:100%">
+            </div>
+
+            <div class="picture fade">
+                <img src="pickle.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentPicture(1)"></span> 
+            <span class="dot" onclick="currentPicture(2)"></span> 
+            <span class="dot" onclick="currentPicture(3)"></span> 
+        </div>
+		
+		<section class="container">
+            <h2>Canning</h2>
+            <p>Canning is a popular method of food preservation that involves sealing food in airtight containers and heat-processing them to kill bacteria and prevent spoilage. To begin, select ripe produce and thoroughly clean and prepare it for canning. Next, choose the appropriate canning method based on the acidity of the food: water bath canning for high-acid foods like fruits and pickles, and pressure canning for low-acid foods like vegetables and meats. Follow a trusted canning recipe to ensure proper processing times and pressure levels to achieve safe and effective preservation. Once canned, store the jars in a cool place and label them with the date and contents for easy identification.</p>
+        </section>
+
+        <section class="container">
+            <h2>Pickling</h2>
+            <p>Pickling is another method of food preservation that gives a tangy flavor and extends the shelf life of fruits and vegetables. To pickle foods, begin by washing and slicing your produce into uniform pieces and packing them into sterilized jars. Prepare any type of pickling solution using vinegar, water, salt, and spices. Then, heat that to a boil before pouring it over the prepared produce in the jars. Make sure the produce is fully submerged in the pickling solution. Then, seal the jars tightly with lids and bands. Allow the pickled foods to sit for a few days to develop flavor before enjoying them.</p>
+        </section>
+
+        <section class="container">
+            <h2>Drying</h2>
+            <p>Drying or dehydrating is a simple and effective method of preserving foods by removing moisture and inhibiting the growth of bacteria and mold. To dry foods, begin by slicing or chopping them into uniform pieces to ensure even drying. Arrange the prepared foods on drying trays in a single layer making sure they are not touching. Place the trays in a food dehydrator or oven set to a low temperature and allow the foods to dry for several hours or overnight. Check the foods periodically for dryness, removing them from the dehydrator or oven once they are leathery and pliable with no moisture remaining. Store the dried foods in airtight containers or sealed bags in a cool place for long-term storage.</p>
+        </section>
+		
+		<section class="container">
+            <h2>Additional Resources</h2>
+            <p>Check out the <a href="https://nchfp.uga.edu/#gsc.tab=0" target="_blank">The University of Georgia's Infomation</a> for more preservation tips.</p>
+        </section>
+		
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Grow & Gather. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
